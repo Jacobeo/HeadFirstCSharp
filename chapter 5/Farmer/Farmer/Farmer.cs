@@ -7,19 +7,22 @@ using System.Threading.Tasks;
 namespace Farmer
 {
     class Farmer
-    {
-        //public const int multiplier = 30;
+    {        
         private int feedMultiplier;
         public int FeetMultiplier { get { return feedMultiplier; } }
         private int numberOfCows;
+        //read-only-propery
         public int BagsOfFeed { get; private set; }
 
+
+        //Constructor
         public Farmer(int numberOfCows, int feedMultiplier)
         {
             this.feedMultiplier = feedMultiplier;
             NumberOfCows = numberOfCows;
         }
 
+        //property 
         public int NumberOfCows
         {
             get
